@@ -31,7 +31,7 @@ header img{
     
     width: 300px;
     height: 40px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin: 0 30px 0;
     display: flex;
     justify-content: space-between;
@@ -41,26 +41,34 @@ header img{
     padding: 0 10px 0 10px;
     border: none;
     outline: none;
-    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .buscar__icon{
+    border: none;
+    outline: none;
     width: 40px;
     height: 40px;
     padding: 0;
+    background: #F3A847;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .buscar__icon--img{
     padding: 0 10px 0 10px;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     background: #F3A847;
+   
 }
-.buscar__icon--img:hover{
+
+.buscar__icon--img:hover, 
+.buscar__icon:hover{
     background: #e6ad63;
 }
