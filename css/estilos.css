@@ -1,0 +1,33 @@
+
+body{
+    margin: 0;
+    box-sizing: content-box;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    border: 1px solid black;
+}
+header img{
+    width: 150px;
+    height: 150px;
+}
+header a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px 40px;
+}
+
+.buscar{
+    width: 250px;
+    height: 40px;
+}
+.icon-search img{
+    width: 30px;
+    height: 30px;
+    background:greenyellow;
+    background-size: cover;
+}
