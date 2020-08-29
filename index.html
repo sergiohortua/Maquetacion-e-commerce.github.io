@@ -27,7 +27,42 @@
 
     <main class="container">
         <section class="container-filtros">
-            <button>FILTROS</button>
+
+            <p>
+                <label class="custom-radio-checkbox">
+                    <!-- Input oculto -->
+                    <input class="custom-radio-checkbox__input" type="radio" name="genero" value="mujer" checked>
+                    <!-- Imagen en sustitucion -->
+                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+                    <!-- Texto -->
+                    <a class="custom-radio-checkbox__text" href="#">Mujer</a>
+                </label>
+            </p>
+            <p>
+                <label class="custom-radio-checkbox">
+                    <!-- Input oculto -->
+                    <input class="custom-radio-checkbox__input" type="radio" name="genero" value="hombre">
+                    <!-- Imagen en sustitucion -->
+                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+                    <!-- Texto -->
+                    <a class="custom-radio-checkbox__text" href="#">Hombre</a>
+                </label>
+            </p>
+            <!-- End Radios -->
+
+            <!-- Checkbox -->
+            <p>
+                <label class="custom-radio-checkbox">
+                    <!-- Input oculto -->
+                    <input class="custom-radio-checkbox__input" type="checkbox" name="genero" value="hombre">
+                    <!-- Imagen en sustitucion -->
+                    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+                    <!-- Texto -->
+                    <a class="custom-radio-checkbox__text" href="#">Acepto las condiciones de uso y privacidad</a>
+                    <input type="checkbox" checked="checked">
+
+                </label>
+            </p>
         </section>
 
         <section class="container-productos">
@@ -172,7 +207,7 @@
     <footer>
         <div class="redes">
             <ul class="redes__lista">
-                <li  class="redes__li">
+                <li class="redes__li">
                     <a href="">
                         <img class="img-red" src="./imagenes/facebook.png" alt="">
                     </a>
@@ -220,7 +255,7 @@
         </div>
         <div class="empresa">
             <h3>EMPRESA</h3>
-            <ul>
+            <ul class="links">
                 <li>
                     <a href="">Sobre nosotros</a>
                 </li>
@@ -231,7 +266,7 @@
         </div>
         <div class="servicios">
             <h3>SERVICIO AL CLIENTE</h3>
-            <ul>
+            <ul class="links">
                 <li>
                     <a href="">Mi cuenta</a>
                 </li>
@@ -247,11 +282,14 @@
             </ul>
 
         </div>
+
         <div class="logo">
+            <img src="./imagenes/licencia.png" alt="">
             <a href="">copy rigth</a>
         </div>
+
         <div class="tyc">
-            <ul>
+            <ul class="links">
                 <li>
                     <a href="">Terminos y condiciones</a>
                 </li>

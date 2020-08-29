@@ -20,8 +20,8 @@ h4{
 
 header{
     width: 100%;
-    height: 100px;
-    border: 0.01px solid black;
+    height: 150px;
+    /*border: 0.01px solid black;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,15 +98,59 @@ main{
     height: 150vH;
     display: grid;
     grid-template-columns: 20% 80%;
-    
-     gap: 1px 1px;
-    border: 1px solid rgb(255, 0, 0);
+    gap: 1px 1px;
+    /*border: 1px solid rgb(255, 0, 0);*/
 }
 
 .container-filtros button{
     grid-column: 1/2;
 }
+/*=================================*/
+.custom-radio-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-primario);
+}
 
+/* Modificador para dar la imagen de checkbox */
+.custom-radio-checkbox__show--checkbox {
+    background-image: url(checkbox-uncheck.png);
+}
+
+/* Modificador para dar la imagen de radio */
+.custom-radio-checkbox__show--radio {
+    background-image: url(radio-uncheck.png);
+}
+
+/* Oculta input original */
+.custom-radio-checkbox > .custom-radio-checkbox__input {
+    display: none;
+}
+
+/* Radio personalizado usando <span> */
+.custom-radio-checkbox > .custom-radio-checkbox__show {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: .5rem;
+    background-size: cover;
+}
+
+/* Cambia el checkbox personalizado cuando es pulsado */
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
+    background-image: url(checkbox-check.png);
+}
+
+/* Cambia el radio personalizado cuando es pulsado */
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio {
+    background-image: url(radio-check.png);
+}
+.custom-radio-checkbox__text{
+    text-decoration: none;
+    color: var(--color-primario);
+}
+/*=================================*/
 /*____________PRODUCTOS____________*/
 .container-productos{
     width: 100%;
@@ -114,7 +158,7 @@ main{
     display: grid;
     grid-template-columns: 33%33% 33%;
     grid-template-rows: 50% 50%;
-    border: 1px solid rgb(0, 17, 255);
+    /*border: 1px solid rgb(0, 17, 255);*/
 }
 .container-productos__btn1 {
     grid-column: 1/2;
@@ -258,7 +302,7 @@ main{
     margin: 0;
     width: 190px;
     height: 50px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: flex;
     justify-content: flex-start;
     padding: 0;
@@ -305,7 +349,7 @@ main{
   .size__btn {
     width: 40px;
     height: 40px;
-    border: 1px solid rgb(0, 0, 0);
+    /*border: 1px solid rgb(0, 0, 0);*/
     border-radius: 10px;
     list-style: none;
     outline: none;
@@ -367,7 +411,8 @@ main{
 footer{
     width: 100%;
     height: 315px;
-    border: 1px solid black;
+    border-top: 1px solid gainsboro;
+    /*border: 1px solid black;*/
     /*background: var(--color-import);*/
     display: grid;
     grid-template-columns: 28% 72%;
@@ -382,7 +427,7 @@ footer{
 }
 .redes{
     grid-area: redes;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     background: var(--color-primario);
 }
 .redes__lista{
@@ -395,7 +440,7 @@ footer{
 
 .registro{
     grid-area: registro;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
 }
 .registro__title{
@@ -450,15 +495,55 @@ footer{
 
 .empresa{
     grid-area: empresa;
+    background: var(--color-import);
+    
+}
+.empresa h3{
+    padding-left: 15px;
+    color: var(--color-primario);
+}
+.servicios h3{
+    padding-left: 50px;
+    color: var(--color-primario);
 }
 .servicios{
     grid-area: servicios;
+    background: var(--color-import);
+
+}
+.links{
+    list-style: none;
+    margin: 0;
+    margin-right: 40px;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.links a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-primario);
 }
 .logo{
     grid-area: logo;
+    
+    padding-left: 20px;
+    background: var(--color-import);
+
+}
+.logo img{
+    filter: grayscale(51%) blur(0px) sepia(1) saturate(0.81) opacity(1) brightness(0%) contrast(100%) hue-rotate(320deg) invert(100%) ;
+
+}
+.logo a{
+    color: var(--color-primario);
 }
 .tyc{
     grid-area: tyc;
+    background: var(--color-import);
+
 }
 .boton-rojo {
     padding: 5px 10px;
