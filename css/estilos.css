@@ -208,7 +208,7 @@ main{
 /*modal*/
 
 .modal-contenido{
-    background-color:var(--color-primario);
+    background-color:var(--color-claro);
     width:600px;
     padding: 20px ;
     margin: 20px auto;
@@ -349,7 +349,7 @@ main{
   
   label:hover,
   label:hover ~ label {
-    color: var(--color-primario);
+    color: var(--color-alterno);
   }
   
   input[type="radio"]:checked ~ label {
@@ -376,28 +376,78 @@ footer{
                          "empresa servicios"
                          "logo tyc";
 }
-li {
-    list-style: none;
-}
+
 .img-red{
     padding: 5px;
 }
 .redes{
     grid-area: redes;
     border: 1px solid black;
-    background: var(--color-alterno);
+    background: var(--color-primario);
 }
 .redes__lista{
     padding:0 ;
     margin: 32px  10px ;
     display: flex;
     justify-content: space-around;
+    list-style: none;
 }
 
 .registro{
     grid-area: registro;
     border: 1px solid red;
+    display: flex;
 }
+.registro__title{
+    width: 200px;
+    align-self: center;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}   
+.registro__title h1{
+    font-size: 16px;
+    font-weight: 700;
+}
+.registro__p{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.registro__p p{
+    padding: 15px;
+    margin: 0;
+    font-size: 15px;
+}
+.registro__in{
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+.registro__in--btn{
+    width: 320px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.registro__in--btn input{
+    width: 200px;
+    height: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid gainsboro;
+    outline: none;
+}
+.registro__in--btn input::-webkit-input-placeholder { 
+    font-family: var(--letra1);
+    font-weight: 100;
+    color: var(--color-primario); 
+    font-size: 18px;
+    opacity: 0.3;
+    padding:4px 0 0 10px;
+    
+}
+
 .empresa{
     grid-area: empresa;
 }
@@ -417,6 +467,7 @@ li {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     text-decoration: none;
+    font-size: 14px;
 }
 .boton-rojo:hover{
     background-color: var(--color-alterno);
