@@ -371,10 +371,32 @@ footer{
     /*background: var(--color-import);*/
     display: grid;
     grid-template-columns: 28% 72%;
-    grid-template-rows: 36% 64%;
+    grid-template-rows: 36% 43% 21%;
+    grid-template-areas: "redes registro" 
+                         "empresa servicios"
+                         "logo tyc";
 }
-
-
+.redes{
+    grid-area: redes;
+}
+li {
+    list-style: none;
+}
+.registro{
+    grid-area: registro;
+}
+.empresa{
+    grid-area: empresa;
+}
+.servicios{
+    grid-area: servicios;
+}
+.logo{
+    grid-area: logo;
+}
+.tyc{
+    grid-area: tyc;
+}
 .boton-rojo {
     padding: 5px 10px;
     background-color: var(--color-primario); 
