@@ -376,14 +376,27 @@ footer{
                          "empresa servicios"
                          "logo tyc";
 }
-.redes{
-    grid-area: redes;
-}
 li {
     list-style: none;
 }
+.img-red{
+    padding: 5px;
+}
+.redes{
+    grid-area: redes;
+    border: 1px solid black;
+    background: var(--color-alterno);
+}
+.redes__lista{
+    padding:0 ;
+    margin: 32px  10px ;
+    display: flex;
+    justify-content: space-around;
+}
+
 .registro{
     grid-area: registro;
+    border: 1px solid red;
 }
 .empresa{
     grid-area: empresa;
