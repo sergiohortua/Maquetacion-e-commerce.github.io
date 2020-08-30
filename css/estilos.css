@@ -102,57 +102,25 @@ main{
     /*border: 1px solid rgb(255, 0, 0);*/
 }
 
-.container-filtros button{
+.container-filtros {
     grid-column: 1/2;
+   
 }
 /*=================================*/
-.custom-radio-checkbox {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    color: var(--color-primario);
-}
 
-/* Modificador para dar la imagen de checkbox */
-.custom-radio-checkbox__show--checkbox {
-    background-image: url(checkbox-uncheck.png);
-}
 
-/* Modificador para dar la imagen de radio */
-.custom-radio-checkbox__show--radio {
-    background-image: url(radio-uncheck.png);
-}
 
-/* Oculta input original */
-.custom-radio-checkbox > .custom-radio-checkbox__input {
-    display: none;
-}
 
-/* Radio personalizado usando <span> */
-.custom-radio-checkbox > .custom-radio-checkbox__show {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: .5rem;
-    background-size: cover;
-}
 
-/* Cambia el checkbox personalizado cuando es pulsado */
-.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
-    background-image: url(checkbox-check.png);
-}
 
-/* Cambia el radio personalizado cuando es pulsado */
-.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio {
-    background-image: url(radio-check.png);
-}
-.custom-radio-checkbox__text{
-    text-decoration: none;
-    color: var(--color-primario);
-}
 /*=================================*/
 /*____________PRODUCTOS____________*/
 .container-productos{
+    grid-column: 2/3;
+    background-image: url("https://www.gifsanimados.org/data/media/911/bandera-de-eeuu-imagen-animada-0056.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: repeat;
     width: 100%;
     height: 100%;
     display: grid;
