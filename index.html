@@ -29,59 +29,112 @@
 
 
         <section class="container-filtros">
-            <select name="OS">
-                <option selected value="0"> GENERO </option>
-                <optgroup label="Microsoft">
-                    <option value="1">Windows </option>
-                    <option value="2">Windows 7</option>
-                    <option value="3">Windows XP</option>
-                </optgroup>
-                <optgroup label="Linux">
-                    <option value="10">Fedora</option>
-                    <option value="11">Debian</option>
-                    <option value="12">Suse</option>
-                </optgroup>
-            </select>
+
+            <div class="genero">
+                <h2>GENERO</h2>
+                <div class="despliegue">
+                    <select name="" class="genero__seccion">
+                        <optgroup label="Woman-Man-Boy-Girl">
+                            <option>Woman </option>
+                            <option>Man</option>
+                            <option>Boy</option>
+                            <option>Girl</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="color">
+                <h2>COLOR</h2>
+                <div class="despliegue">
+                    <select name="" class="color__seccion">
+                        <optgroup label="COLOR">
+                            <option>BLACK</option>
+                            <option>MAROON</option>
+                            <option>OLIVE</option>
+                            <option>REPLICA GREY</option>
+                            <option>VINTAGE WHITE</option>
+                            <option>REPLICA BLUE</option>
+                            <option>VINTAGE OLIVE</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="talla">
+                <h2>TALLA</h2>
+                <div class="despliegue">
+                    <select name="" class="talla__seccion">
+                        <optgroup label="TALLA">
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>2XL</option>
+                            <option>3XL</option>
+                            <option>4XL</option>
+                            <option>5XL</option>
+                            <option>O/S</option>
+                            <option>XXS</option>
+                            <option>MT</option>
+                            <option>LT</option>
+                            <option>XLT</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
         </section>
+
 
 
         <section class="container-productos">
 
             <a href="#miModal" class="container-productos__btn1">
-                <div class="">
-                    <img class="imagen" src="./imagenes/AVF191O01_410_1_540x.jpg" alt="soy la imagen para el modal">
-                    <h4>EAGLE SATIN JACKET</h4>
-                    <h4>$200</h4>
-
+                <div class="card__img--tamaño">
+                    <img class="card__img--imagen" src="./imagenes/AVF191O01_410_1_540x.jpg"
+                        alt="soy la imagen para el modal">
                 </div>
+                <div class="mini-description">
+                    <h4>EAGLE JACKET</h4>
+                    <h4>$200</h4>
+                    <button><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
+                </div>
+                
 
             </a>
             <div id="miModal" class="modal">
                 <div class="modal-contenido">
                     <div class="conten-left">
-                        <img class="imagen" src="./imagenes/AVF191O01_410_1_540x.jpg" alt="">
+                        <img class="modal__img--imagen" src="./imagenes/AVF191O01_410_1_540x.jpg" alt="">
 
-                        <p>Crafted with our signature quality and authenticity, this three-tone bomber boasts styling
-                            that makes
-                            it unique. The jacket's additional modern edge can be attributed to the bold eagle
-                            embroidery on the
-                            chest and back.
-                        <ul>
-                            <li>
-                                Original Eagle Art Embroidery
-                            </li>
-                            <li>
-                                Souvenir Jacket Design Detail
-                            </li>
-                            <li>
-                                Safety Orange Lining</p>
-                            </li>
-                        </ul>
+                        <div class="descripcion">
+                            <p>Crafted with our signature quality and authenticity, this three-tone bomber boasts
+                                styling
+                                that makes
+                                it unique. The jacket's additional modern edge can be attributed to the bold eagle
+                                embroidery on the
+                                chest and back.
+                            <ul>
+                                <li>
+                                    Original Eagle Art Embroidery
+                                </li>
+                                <li>
+                                    Souvenir Jacket Design Detail
+                                </li>
+                                <li>
+                                    Safety Orange Lining</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="contend-rigth">
-                        <a href="#">
-                            <button>CLOSE</button>
-                        </a>
+                        <div class="exit">
+                            <a href="#">
+                                <button class="exit__btn">CLOSE</button>
+                            </a>
+                        </div>
                         <h3>EAGLE SATIN JACKET</h3>
                         <h4>$200</h4>
                         <h5>COLOR</h5>
@@ -121,64 +174,34 @@
                             </li>
                         </ul>
                         <form>
+                            <div>
+                                <p>Review</p>
+                            </div>
                             <p class="clasificacion">
-                                <input id="radio1" type="radio" name="estrellas" value="5"><label
-                                    for="radio1">★</label><input id="radio2" type="radio" name="estrellas"
-                                    value="4"><label for="radio2">★</label><input id="radio3" type="radio"
-                                    name="estrellas" value="3"><label for="radio3">★</label><input id="radio4"
-                                    type="radio" name="estrellas" value="2"><label for="radio4">★</label><input
-                                    id="radio5" type="radio" name="estrellas" value="1"><label for="radio5">★</label>
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
                             </p>
                         </form>
-
-                        <a href="">
-                            <button>ADD TO CART</button>
-                        </a>
-                        <h3>asldk</h3>
-
-
-
+                        <div class="add">
+                            <a href="">
+                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
+                            </a>
+                        </div>
                     </div>
 
 
                 </div>
             </div>
 
-            <a href="#miModal2" class="container-productos__btn2">
-                <div>
-                    <img class="imagen" src="./imagenes/AVH191O02_001_7_540x.jpg" alt="">
-                    <h4>JACKET</h4>
-                    <h4>$987</h4>
-                </div>
-            </a>
-            <a href="#miModal3" class="container-productos__btn3">
-                <div>
-                    <img class="imagen" src="./imagenes/AVH191O03_001_540x.jpg" alt="">
-                    <h4>JACKET</h4>
-                    <h4>$987</h4>
-                </div>
-            </a>
-            <a href="#miModal4" class="container-productos__btn4">
-                <div>
-                    <img class="imagen" src="./imagenes/AVH192O01_931_7_540x.jpg" alt="">
-                    <h4>JACKET</h4>
-                    <h4>$987</h4>
-                </div>
-            </a>
-            <a href="#miModal5" class="container-productos__btn5">
-                <div>
-                    <img class="imagen" src="./imagenes/AVH192O03_050_540x.jpg" alt="">
-                    <h4>JACKET</h4>
-                    <h4>$987</h4>
-                </div>
-            </a>
-            <a href="#miModal6" class="container-productos__btn6">
-                <div>
-                    <img class="imagen" src="./imagenes/AVS201K10_257_540x.jpg" alt="">
-                    <h4>JACKET</h4>
-                    <h4>$987</h4>
-                </div>
-            </a>
+
         </section>
 
     </main>
