@@ -12,16 +12,109 @@
 
 <body>
     <header>
-        <img src="./imagenes/logofull.png" alt="">
-        <a class="nav__shop" href="https://i.pinimg.com/564x/d7/b0/ae/d7b0ae2d5b96de891eee48e78878a0e9.jpg"
-            target="_blank">SHOP</a>
-        <a class="nav__disc" href="">DISCOVER</a>
-        <form class="buscar">
-            <input type="text" placeholder="Buscar en Master Shop" name="search" autocomplete="off">
-            <button class="buscar__icon" target="_blank">
-                <img class="buscar__icon--img" src="./imagenes/buscar.png" alt="">
-            </button>
-        </form>
+        <div class="header__logo">
+            <img class="header__logo--img" src="./imagenes/logofull.png" alt="logo">
+        </div>
+        <div class="nav">
+            <ul class="nav__lista">
+                <li>
+                    <a class="nav__shop" href="https://i.pinimg.com/564x/d7/b0/ae/d7b0ae2d5b96de891eee48e78878a0e9.jpg"
+                        target="_blank">SHOP</a>
+                </li>
+                <li>
+                    <a class="nav__disc" href="">DISCOVER</a>
+                </li>
+                <li>
+                    <a href="nav__cart" href="">
+                        <div class="boton-modal">
+                            <a href="#miModal_cart" class="boton-modal__a">
+                                <img class="imagen-cart" src="./imagenes/shopping-cart.png"
+                                    alt="soy la imagen para el modal">
+                            </a>
+                        </div>
+                        <div id="miModal_cart" class="modal_cart">
+                            <div class="modal-cart__contenido">
+                                <div class="header">
+                                    <div class="titulo">
+                                        <h2>SHOPPING</h2>
+                                    </div>
+                                    <img class="header__imagen" src="./imagenes/shopping-cart.png"
+                                        alt="carrito de compras">
+                                </div>
+                                <div class="tabla">
+                                    <div class="tproducto">
+                                        <h3>PRODUCTO</h3>
+                                    </div>
+                                    <div class="tprecio">
+                                        <h3>PRECIO</h3>
+                                    </div>
+                                    <div class="tcantidad">
+                                        <h3>CANTIDAD</h3>
+                                    </div>
+                                    <div class="ttotal">
+                                        <h3>TOTAL</h3>
+                                    </div>
+
+                                    <div class="producto__descripcion">
+                                        <div class="container__producto">
+                                            <div class="container__producto--img">
+                                                <img class="producto__img--img"
+                                                    src="./imagenes/AVS201O02_257_2_540x.jpg" alt="producto">
+                                            </div>
+                                            <div class="container__producto--descripcion">
+                                                <h6>Jacket Ref</h6>
+                                                <h6>Color: SAGE</h6>
+                                                <h6>Size: M</h6>
+                                                <div class="producto__rm--btn">
+                                                    <a href="">
+                                                        <button>REMOVE</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="precio">
+                                        <h2>$200</h2>
+                                    </div>
+                                    <div class="cantidad">
+                                        <a href="">
+                                            <input type="number">
+                                        </a>
+                                    </div>
+                                    <div class="total">
+                                        <h2>$200</h2>
+                                    </div>
+
+                                    <div class="update">
+                                        <a href="">
+                                            <button>UPDATE</button>
+                                        </a>
+                                    </div>
+                                    <div class="checkout">
+                                        <a href="">
+                                            <button>CHECKOUT</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="exit">
+                                    <a href="#">
+                                        <button class="exit__btn">CLOSE</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <form class="buscar">
+                <input type="text" placeholder="Buscar en Master Shop" name="search" autocomplete="off">
+                <button class="buscar__icon" target="_blank">
+                    <img class="buscar__icon--img" src="./imagenes/buscar.png" alt="">
+                </button>
+            </form>
+        </div>
 
     </header>
 
@@ -101,9 +194,9 @@
                     <h4>$200</h4>
                     <button><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
                 </div>
-                
+
             </a>
-            <div id="miModal" class="modal" >
+            <div id="miModal" class="modal">
                 <div class="modal-contenido">
                     <div class="conten-left">
                         <img class="modal__img--imagen" src="./imagenes/AVF191O01_410_1_540x.jpg" alt="">
@@ -191,7 +284,8 @@
                         </form>
                         <div class="add">
                             <a href="">
-                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
+                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO
+                                    CART</button>
                             </a>
                         </div>
                     </div>
@@ -210,10 +304,10 @@
                     <h4>$200</h4>
                     <button><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
                 </div>
-                
+
 
             </a>
-            <div id="miModal2" class="modal" >
+            <div id="miModal2" class="modal">
                 <div class="modal-contenido">
                     <div class="conten-left">
                         <img class="modal__img--imagen2" src="/imagenes/AVH191O02_001_7_540x.jpg" alt="">
@@ -301,7 +395,8 @@
                         </form>
                         <div class="add">
                             <a href="">
-                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
+                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO
+                                    CART</button>
                             </a>
                         </div>
                     </div>
@@ -320,7 +415,7 @@
                     <h4>$200</h4>
                     <button><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
                 </div>
-                
+
 
             </a>
             <div id="miModal3" class="modal">
@@ -411,7 +506,8 @@
                         </form>
                         <div class="add">
                             <a href="">
-                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
+                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO
+                                    CART</button>
                             </a>
                         </div>
                     </div>
@@ -431,7 +527,7 @@
                     <h4>$200</h4>
                     <button><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
                 </div>
-                
+
 
             </a>
             <div id="miModal4" class="modal">
@@ -522,7 +618,8 @@
                         </form>
                         <div class="add">
                             <a href="">
-                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
+                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO
+                                    CART</button>
                             </a>
                         </div>
                     </div>
@@ -541,7 +638,7 @@
                     <h4>$200</h4>
                     <button><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
                 </div>
-                
+
 
             </a>
             <div id="miModal5" class="modal">
@@ -632,7 +729,8 @@
                         </form>
                         <div class="add">
                             <a href="">
-                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
+                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO
+                                    CART</button>
                             </a>
                         </div>
                     </div>
@@ -651,7 +749,7 @@
                     <h4>$200</h4>
                     <button><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
                 </div>
-                
+
 
             </a>
             <div id="miModal6" class="modal">
@@ -742,7 +840,8 @@
                         </form>
                         <div class="add">
                             <a href="">
-                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO CART</button>
+                                <button class="add__btn"><img src="./imagenes/shopping-cart.png" alt="">ADD TO
+                                    CART</button>
                             </a>
                         </div>
                     </div>
