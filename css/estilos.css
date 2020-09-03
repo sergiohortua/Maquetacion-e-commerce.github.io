@@ -908,6 +908,7 @@ footer{
 }
 .logo a{
     color: var(--color-primario);
+    text-decoration: none;
 }
 .tyc{
     grid-area: tyc;
