@@ -12,6 +12,7 @@
     
 }
 body{
+    display: grid;
     margin: 0;
     box-sizing: content-box;
     font-family: var(--letra1)
@@ -945,8 +946,8 @@ header{
     display: block;
 }
   */
-body{
-    display: grid;
+.header{
+    background: var(--color-import);
 }
 }
 @media screen and(max-width:480px){
